@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.brand-text {
+    color: #f9802b;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20pt;
+    vertical-align: middle;
+}

@@ -1,0 +1,32 @@
+.card-img {
+    object-position: center; /* Center the image within the element */
+    object-fit: cover;
+    width: 100%;
+    max-height: 250px;
+    margin-bottom: 1rem;
+}
+
+.card {
+    min-width: 18rem;
+    max-width: 33vw;
+    float: none; /* Added */
+}
+
+.card-header {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        min-width: 18rem;
+        max-width: 33vw;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+    }
+}

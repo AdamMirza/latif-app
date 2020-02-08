@@ -1,0 +1,20 @@
+h2 {
+    color: #f9802b;
+    width: 100%; 
+    border-bottom: 1px solid #d6d6d6; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-top: 40px;
+}
+
+h2 span {
+    background:#fff;
+    padding: 0 30px;
+}
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}

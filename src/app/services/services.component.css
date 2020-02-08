@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    color: #f9802b;
+}
+
+.list-group-item {
+    cursor: pointer;
+    user-select: none;
+}
+

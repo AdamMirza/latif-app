@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-warning {
+    color: white !important;
+    background-color: #f9802b !important;
+    border: #f9802b !important;
+}
+
+.btn-warning:hover {
+    background-color: #fa9f5f !important;
+    border: #fa9f5f !important;
+}
+
+h1 {
+    color: #f9802b !important;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 20pt !important;
+    }
+    h3 {
+        font-size: 10pt !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 20pt !important;
+    }
+    h3 {
+        font-size: 8pt !important;
+    }
+}
+
+.body-class {
+    min-height: 80vh;
+}

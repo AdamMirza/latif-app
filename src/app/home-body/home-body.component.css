@@ -1,0 +1,27 @@
+.see-services {
+    background-image: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1655&q=80');
+    height: 250px;
+    background-position: center;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+}
+
+.see-services > .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.see-services > .inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}

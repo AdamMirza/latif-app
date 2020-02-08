@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col mb-4">
+            <h1>Services</h1>
+            <p class="text-center"><i>Here are our top services. Click on them to see cool interactions!</i></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="list-group">
+                <li class="list-group-item" unselectable="on" *ngFor="let service of serviceList; let i = index" [class.active]="selectedIndex === i" (click)="setIndex(i)">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="p-2">{{service.title}}</div>
+                        <div class="p-2">{{service.description}}</div>
+                        <div class="p-2"></div>
+                        <div class="p-2"><span class="badge badge-primary badge-pill">{{service.infoText}}</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-warning mt-3" routerLink="/pricing">See our Pricing</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="container-fluid mt-3">
+    <div class="row mb-2">
+        <div class="col text-center">
+            <h1>Pricing</h1>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-4 col-sm-2"></div>
+        <div class="col-md-4 col-sm-8 text-center">
+            <p>
+                <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar, justo quis imperdiet accumsan, arcu sem sagittis ex, quis gravida magna nisi blandit orci.</i>
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card-deck">
+                <div class="card text-white bg-dark mb-3 text-center" *ngFor="let service of serviceList">
+                    <div class="card-header">{{service.title}}</div>
+                    <div class="card-body">
+                        <img class="card-img" height="200px" src="{{service.url}}">
+                        <p class="card-title mt-2 mb-4">${{service.price}}.00</p>
+                        <p class="card-text">{{service.description}}</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter" (click)="this.selectPlan()">
+                            Choose {{service.title}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
